@@ -1,0 +1,149 @@
+@font-face 
+{
+    font-family: 'Mona Sans';
+    src:url('resources/fonts/Mona-Sans.ttf');
+   
+}
+
+html{
+    height:100%;
+  }
+
+   /* 
+   fashionable color 
+   color: rgb(230, 65, 65); 
+   */
+
+body
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('resources/images/bkg.jpg');
+    background-blend-mode: overlay;
+    font-family: 'Mona Sans';
+}
+
+.GN
+{
+    background-image: linear-gradient(to bottom,rgb(39, 25, 25), 65%, rgb(153, 58, 4));;
+}
+
+.Head
+{ 
+    position: fixed;
+    margin-top: 5%;
+    top: 0%;
+    width: 30%;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 300%;
+    color:black;
+    -webkit-text-fill-color:transparent;
+    -webkit-text-stroke: 1px;
+    text-align: center;
+    text-shadow: transparent 0 0 0;
+    transition: text-shadow 0.75s;
+    cursor: pointer;
+    transition: font-size 1s;
+}
+
+.Head:hover
+{
+ text-shadow: rgb(46, 81, 92) 0px 0px 20px;
+ font-size: 305%;
+}
+
+.Middle
+{
+    -webkit-text-fill-color:black;
+    position: fixed;
+    font-size: 150%;
+    top: 40%;
+    margin-top: 5%;
+    width: 30%;
+    text-align: center;
+    opacity: 0;
+}
+
+.Question
+{
+    cursor: pointer;
+    font-family: 'Mona Sans';
+    position: fixed;
+    text-align: center;
+    font-size: 250%;
+    top: 40%;
+    margin-left: 0%;
+    margin-right: 5%;
+    margin-top: 5%;
+    left: 35%;
+    width: 30%;
+    opacity: 0;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 0px 80px;
+    color:rgb(255, 255, 255);
+}
+
+.Middle:hover
+{
+    text-shadow: transparent 0 0 0;
+}
+
+h1 {left: 5%;}
+h2 {left: 35%;}
+h3 {left: 65%;}
+ 
+    @keyframes movetocenter {
+        from {
+            top: 0%;
+        }
+      
+        to {
+            top: 40%;
+        }
+      }
+
+    @keyframes fadeout {
+        from{
+            opacity:1;
+        }
+        to{
+            opacity:0;
+        }
+    }
+
+    @keyframes fadein {
+        from{
+            opacity:0;
+        }
+        to{
+            opacity:0.75;
+        }
+    }
+
+    @keyframes fadeinfull {
+        from{
+            opacity:0;
+        }
+        to{
+            opacity:1;
+        }
+    }
+
+    @keyframes fadeout2 {
+        from{
+            opacity:0.75;
+            font-size: 150%;
+        }
+        to{
+            opacity:0;
+            font-size: 200%;
+        }
+    }
+
+p
+{
+    font-family: inherit;    
+    color: black;
+}

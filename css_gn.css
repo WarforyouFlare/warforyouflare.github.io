@@ -1,0 +1,44 @@
+@font-face 
+{
+    font-family:'Mona-Sans';
+    src:url('resources/fonts/Mona-Sans.ttf');
+   
+}
+
+html{
+    height:100%;
+  }
+
+   /* 
+   fashionable color 
+   color: rgb(230, 65, 65); 
+   */
+
+body
+{
+   background: linear-gradient(rgb(39, 25, 25), 55%, rgb(153, 58, 4));
+}
+h1
+{
+    font-family: 'Mona-Sans';
+    margin-top: 5%;
+    top: 30%;
+    left: 30%;
+    width: 40%;
+    font-weight: 900;
+    font-size: 300%;
+    color:rgba(0, 0, 0, 0.37);
+    position: absolute;
+    text-align: center;
+    /* text-shadow:black 0px 0px 10px; */
+    cursor: pointer;
+    opacity: 0
+}
+@keyframes fadein {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:0.75;
+    }
+}
